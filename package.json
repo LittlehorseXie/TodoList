@@ -1,0 +1,21 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "run --x64 --mirror https://dl.nwjs.io/ .",
+    "build": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nw.js"
+  ],
+  "author": "LittlehorseX",
+  "devDependencies": {
+    "nw-builder": "^3.5.4",
+    "nwjs-builder-phoenix": "^1.14.8"
+  },
+  "build": {
+    "nwVersion": "0.14.7"
+  }
+}
