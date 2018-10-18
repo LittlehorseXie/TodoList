@@ -1,12 +1,10 @@
-# 搭建环境-Mac
+## 搭建环境-Mac
 
-nw.js 下载页面 https://github.com/nwjs/nw.js
-
-https://nwjs.io/blog/v0.33.4/ 选择sdk build
+nw.js下载 https://nwjs.io/blog/v0.33.4/ 选择sdk build
 
 下载好了之后解压文件，进入解压后的文件夹，再将nw.app文件复制到Appalication文件夹，操作如下：
 ```shell
-cd nwjs-v0.20.3-osx-x64
+cd nwjs-sdk-v0.33.4-osx-x64
 cp -r ./nwjs.app /Applications/
 ```
 
@@ -30,3 +28,7 @@ source ~/.bash_profile
 ## 本地运行项目
 
 nw .
+
+## 调试
+
+sdk模式才可以调试，右键 -> 检查
