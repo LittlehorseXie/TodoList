@@ -50,7 +50,7 @@ sdk模式才可以调试，右键 -> 检查
 
 ### == windows系统 ==
 
-1. 把上面的例子打成zip包,保证压缩包下直接为package.json和index.html. 例如helloworld.zip. 
+1. 打zip包, 保证压缩包下直接为package.json和index.html. 例如helloworld.zip. 
 2. 重命名helloworld.zip为helloworld.nw. 
 3. 移动helloworld.nw到nw.exe所在的文件夹内. 
 4. 在命令行中执行copy /b nw.exe+helloworld.nw app.exe. 
