@@ -1,14 +1,14 @@
-## 搭建环境-Mac
+## 1. 搭建环境-Mac
 
-nw.js下载 https://nwjs.io/blog/v0.33.4/ 选择sdk build
+1. 下载skd版nw.js（方便调试） [v0.33.4下载链接](https://nwjs.io/blog/v0.33.4/)
 
-下载好了之后解压文件，进入解压后的文件夹，再将nw.app文件复制到Appalication文件夹，操作如下：
+2. 下载好了之后解压文件，进入解压后的文件夹，再将nw.app文件复制到Appalication文件夹，操作如下：
 ```shell
 cd nwjs-sdk-v0.33.4-osx-x64
 cp -r ./nwjs.app /Applications/
 ```
 
-打开`bash_profile`文件
+3. 打开`bash_profile`文件
 ```shell
 vi ~/.bash_profile
 ```
@@ -23,12 +23,40 @@ alias nw="/Applications/nwjs.app/Contents/MacOS/nwjs"
 source ~/.bash_profile
 ```
 
-命令行输出nw 测试是否打开了nwjs.
+4. 命令行输出nw 测试是否打开了nwjs.
 
-## 本地运行项目
+## 2. 本地运行项目
 
 nw .
 
-## 调试
+## 3. 调试
 
 sdk模式才可以调试，右键 -> 检查
+
+## 4. 目录结构
+
+```
+|-- app
+|    |-- assets
+|    |-- common
+|    |-- pages
+|    |-- utils
+|-- .babelrc
+|-- index.html
+|-- package.json
+```
+
+## 5. 打包
+
+### == windows系统 ==
+
+1. 把上面的例子打成zip包,保证压缩包下直接为package.json和index.html. 例如helloworld.zip. 
+2. 重命名helloworld.zip为helloworld.nw. 
+3. 移动helloworld.nw到nw.exe所在的文件夹内. 
+4. 在命令行中执行copy /b nw.exe+helloworld.nw app.exe. 
+5. 双击运行app.exe.
+
+### == mac系统 ==
+
+
+

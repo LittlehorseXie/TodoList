@@ -4,16 +4,32 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "run --x64 --mirror https://dl.nwjs.io/ .",
-    "build": "echo \"Error: no test specified\" && exit 1"
+    "start": "nwjs dist",
+    "build": "webpack --display-reasons",
+    "mw-prod": "nwbuild -p win64 -o out/ dist/"
   },
   "keywords": [
     "nw.js"
   ],
   "author": "LittlehorseX",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.4",
+    "html-webpack-plugin": "^3.2.0",
     "nw-builder": "^3.5.4",
-    "nwjs-builder-phoenix": "^1.14.8"
+    "nwjs-builder-phoenix": "^1.14.8",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "window": {
+    "resizable": true,
+    "min_width": 1200,
+    "min_height": 700
   },
   "build": {
     "nwVersion": "0.14.7"
