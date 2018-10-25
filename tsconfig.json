@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-      "experimentalDecorators": true,
-      "allowJs": true
+    "outDir": "./out/",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "target": "es5"
   }
 }

@@ -7,22 +7,13 @@
     <link rel="stylesheet" type="text/css" href="./antd.min.css" />
   </head>
   <body>
-    <div id="APP"></div>
+    <div id="app"></div>
     <script>
-      // window.init = function init (page, nativeWindow, props, onDrop) {
-        // console.log(page, nativeWindow, props, onDrop)
-        // var gulp = require('gulp')
-        // gulp.task('reload', function () {
-        //   if (location) location.reload()
-        // })
-      
-        // gulp.watch('**/*', ['reload'])
-        let ReactDOM = require('react-dom')
-        let React = require('react')
-        const rootEl = document.getElementById('APP')
-        const { default: Index } = require(`../pages/index`)
-        ReactDOM.render(React.createElement(Index), document.body)
-      // }
+      let ReactDOM = require('react-dom')
+      let React = require('react')
+      const rootEl = document.getElementById('app')
+      const { default: Index } = require(`../pages/index`)
+      ReactDOM.render(React.createElement(Index), rootEl)
     </script>
   </body>
 </html>

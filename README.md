@@ -29,18 +29,20 @@ source ~/.bash_profile
 
 nw .
 
-## 3. 调试
-
-sdk模式才可以调试，右键 -> 检查
+## 3. 本地调试
+```
+npm run dev
+```
 
 ## 4. 目录结构
 
 ```
 |-- app
 |    |-- assets
-|    |-- common
 |    |-- pages
 |    |-- utils
+|    |-- index.js
+|-- build
 |-- .babelrc
 |-- index.html
 |-- package.json
@@ -50,11 +52,11 @@ sdk模式才可以调试，右键 -> 检查
 
 ### == windows系统 ==
 
-1. 打zip包, 保证压缩包下直接为package.json和index.html. 例如helloworld.zip. 
-2. 重命名helloworld.zip为helloworld.nw. 
-3. 移动helloworld.nw到nw.exe所在的文件夹内. 
-4. 在命令行中执行copy /b nw.exe+helloworld.nw app.exe. 
-5. 双击运行app.exe.
+1. 打zip包, 保证压缩包下直接为package.json和index.html. 例如helloworld.zip
+2. 重命名helloworld.zip为helloworld.nw
+3. 移动helloworld.nw到nw.exe所在的文件夹内
+4. 在命令行中执行copy /b nw.exe+TodoList.nw app.exe
+5. 双击运行app.exe
 
 ### == mac系统 ==
 
