@@ -1,19 +1,16 @@
-// import { h as preactRender, Component } from 'preact'
 import React, { Component } from 'react'
 import { Menu, Icon } from 'antd'
 import routeConfig from './route.js'
 const SubMenu = Menu.SubMenu
 const MenuItemGroup = Menu.ItemGroup
 
-
+@autobind
 class HelloWorld extends Component {
-  constructor(props) {
-    super(props)
-    this.handleClick = this.handleClick.bind(this)
-    this.state = {
-
+  @CSS({
+    '.box': {
+      background: '#000'
     }
-  }
+  })
   handleClick(e) {
     console.log(e)
   }

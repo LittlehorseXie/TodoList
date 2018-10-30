@@ -7,6 +7,11 @@ class HelloWorld extends Component {
 
     }
   }
+  @CSS ({
+    'div': {
+      background: '#DDD'
+    }
+  })
   render() {
     return (
       <div>我是 LOGIN</div>
